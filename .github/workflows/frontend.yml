@@ -22,7 +22,7 @@ jobs:
     - name: Dołączenie Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: "16.16.0"
+        node-version: "16.18.0"
 
     - name: Instalacja dependencji
       run: npm install
@@ -39,7 +39,7 @@ jobs:
         uses: azure/appservice-build@v3
         with: 
           platform: nodejs
-          platform-version: 16.16.0
+          platform-version: 16.18.0
       - name: Wdrożenie aplikacja na Azure App Service
         uses: azure/webapps-deploy@v1
         with: 
